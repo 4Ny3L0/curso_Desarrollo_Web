@@ -19,6 +19,7 @@ body {
 /* GLOBALES */
 
 .contenedor {
+    widows: 95%;
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -75,10 +76,17 @@ img {
     text-decoration: none;
     font-size: 1.8rem;
     padding: 1rem 3rem;
-    display: inline-block;
     margin-top: 3rem;
     text-align: center;
     border: none;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .boton {
+        display: inline-block;
+        flex: 0 0 auto;
+    }
 }
 
 .boton:hover {
@@ -109,6 +117,13 @@ img {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .contenido-header {
+        text-align: left;
+    }
 }
 
 .contenido-header h1 {
@@ -119,10 +134,15 @@ img {
 }
 
 .barra {
-    display: flex;
-    justify-content: space-between;
     padding-top: 3rem;
-    align-items: center;
+}
+
+@media (min-width: 768px) {
+    .barra {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
 
 
@@ -131,26 +151,65 @@ img {
 .navegacion a {
     color: white;
     text-decoration: none;
-    font-size: 1.8rem;
-    margin-right: 2rem;
+    font-size: 2.2rem;
+    display: block;
+}
+
+.mobile-menu img {
+    /* margin: 0 auto; */
+    width: 5rem;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        display: none;
+    }
+}
+
+.navegacion:target {
+    display: block;
+}
+
+.navegacion {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .navegacion {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .navegacion a {
+        margin-right: 2rem;
+        display: inline-block;
+        font-size: 1.8rem;
+    }
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
 }
 
 .navegacion a:hover {
     color: #71b100;
 }
 
-.navegacion a:last-of-type {
-    margin: 0;
-}
-
-.nosotros-iconos {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .nosotros-iconos {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .icono {
-    flex-basis: calc(33.3% - 1rem);
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .icono {
+        flex-basis: calc(33.3% - 1rem);
+    }
 }
 
 .icono h3 {
@@ -160,18 +219,24 @@ img {
 
 /*ANUNCIOS*/
 
-.contenedor-anuncios {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+@media (min-width: 768px) {
+    .contenedor-anuncios {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
 }
 
 .anuncio {
-    flex-shrink: 0;
-    flex-basis: calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #f5f5f5;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .anuncio {
+        flex-basis: calc(33.3% - 1rem);
+    }
 }
 
 .contenido-anuncio {
@@ -186,11 +251,28 @@ img {
 .precio {
     color: #71b100;
     font-weight: 700;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .precio {
+        color: #71b100;
+        font-weight: 700;
+    }
 }
 
 .ver-todas {
-    display: flex;
-    justify-content: flex-end;
+    width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+    .ver-todas {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 0;
+    }
 }
 
 
@@ -206,7 +288,7 @@ img {
 }
 
 .contenido-contacto {
-    flex: 1;
+    flex: 0 0 95%;
     color: white;
 }
 
@@ -235,9 +317,11 @@ img {
 
 /* SECCION INFERIOR */
 
-.seccion-inferior {
-    display: flex;
-    justify-content: space-between;
+@media (min-width: 768px) {
+    .seccion-inferior {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .seccion-inferior .blog {
@@ -249,21 +333,27 @@ img {
 }
 
 .entrada-blog {
-    display: flex;
-    justify-content: space-between;
     margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+    .entrada-blog {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .entrada-blog:last-of-type {
     margin-bottom: 0;
 }
 
-.entrada-blog .imagen {
-    flex-basis: 40%;
-}
-
-.entrada-blog .texto-entrada {
-    flex-basis: calc(60% - 3rem);
+@media (min-width: 768px) {
+    .entrada-blog .imagen {
+        flex-basis: 40%;
+    }
+    .entrada-blog .texto-entrada {
+        flex-basis: calc(60% - 3rem);
+    }
 }
 
 .texto-entrada h4 {
@@ -327,14 +417,30 @@ img {
 }
 
 .contenedor-footer {
+    text-align: center;
     padding: 3rem 0;
-    display: flex;
-    justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+    .contenedor-footer {
+        display: flex;
+        justify-content: space-between;
+    }
 }
 
 .copyright {
     margin: 0;
     color: white;
+}
+
+.site-footer nav {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .site-footer nav {
+        display: block;
+    }
 }
 
 
@@ -348,10 +454,12 @@ img {
 
 /* INTERNAS */
 
-.contenido-nosotros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 2rem;
+@media (min-width:768px) {
+    .contenido-nosotros {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+    }
 }
 
 .texto-nosotros blockquote {
