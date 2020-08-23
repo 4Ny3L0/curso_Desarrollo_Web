@@ -1,27 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/estilo.css" />
     <title>Blog de viajes</title>
-</head>
+  </head>
 
-<body>
-    <header class="contenedor site-header ">
-        <img src="img/logo.png" alt="">
+  <body>
+    <header class="contenedor site-header">
+      <img src="img/logo.png" alt="" />
     </header>
     <div class="barra">
-        <nav class="navegacion-principal contenedor">
+      <a href="#navegacion" class="menu-m">
+        <i class="fas fa-ellipsis-v"></i>
+      </a>
+      <nav id="navegacion" class="navegacion-principal contenedor">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Blog</a>
+        <a href="#">Tienda</a>
+        <a href="#">Contacto</a>
+      </nav>
+    </div>
+
+    <div class="contenedor clearfix">
+      <main class="contenido-principal">
+        <article class="entrada">
+          <h2>Viajar a Londres</h2>
+          <img src="img/imagen_1.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Laboriosam, quo? Veritatis numquam, velit possimus, at explicabo
+            corporis doloremque nobis natus nesciunt ipsa ea corrupti.
+            Voluptates debitis blanditiis laborum ipsum totam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            distinctio, nostrum placeat corrupti quis iste odio itaque. Suscipit
+            libero quos sit dignissimos. Perferendis eligendi laudantium ad.
+            Animi vel velit sunt. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Natus officia pariatur deleniti quos sunt
+            assumenda. Amet voluptatum ab sit suscipit! Error ducimus voluptas
+            vel ullam quam consequatur reiciendis! Ipsa, minus.
+          </p>
+          <a href="#" class="boton">Leer mas</a>
+        </article>
+
+        <article class="entrada">
+          <h2>Puente de la torre</h2>
+          <img src="img/imagen_2.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Laboriosam, quo? Veritatis numquam, velit possimus, at explicabo
+            corporis doloremque nobis natus nesciunt ipsa ea corrupti.
+            Voluptates debitis blanditiis laborum ipsum totam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            distinctio, nostrum placeat corrupti quis iste odio itaque. Suscipit
+            libero quos sit dignissimos. Perferendis eligendi laudantium ad.
+            Animi vel velit sunt. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Natus officia pariatur deleniti quos sunt
+            assumenda. Amet voluptatum ab sit suscipit! Error ducimus voluptas
+            vel ullam quam consequatur reiciendis! Ipsa, minus.
+          </p>
+          <a href="#" class="boton">Leer mas</a>
+        </article>
+
+        <article class="entrada">
+          <h2>Metro de Londres</h2>
+          <img src="img/imagen_3.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Laboriosam, quo? Veritatis numquam, velit possimus, at explicabo
+            corporis doloremque nobis natus nesciunt ipsa ea corrupti.
+            Voluptates debitis blanditiis laborum ipsum totam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit
+            distinctio, nostrum placeat corrupti quis iste odio itaque. Suscipit
+            libero quos sit dignissimos. Perferendis eligendi laudantium ad.
+            Animi vel velit sunt. Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Natus officia pariatur deleniti quos sunt
+            assumenda. Amet voluptatum ab sit suscipit! Error ducimus voluptas
+            vel ullam quam consequatur reiciendis! Ipsa, minus.
+          </p>
+          <a href="#" class="boton">Leer mas</a>
+        </article>
+      </main>
+
+      <aside class="sidebar">
+        <section class="otras-entradas">
+          <h2>Otros posts</h2>
+          <ul>
+            <li><a href="#">Entrada 1 </a></li>
+            <li><a href="#">Entrada 2 </a></li>
+            <li><a href="#">Entrada 3 </a></li>
+            <li><a href="#">Entrada 4 </a></li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+    <footer class="footer-site">
+      <div class="contenedor clearfix">
+        <section class="nosotros">
+          <h2>Sobre nosotros</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            cupiditate repellendus neque veritatis asperiores, eligendi eius
+            nobis aliquam ipsum voluptas corporis iste perferendis facere cum
+            dolor quidem culpa accusantium obcaecati!
+          </p>
+        </section>
+        <section class="menu">
+          <h2>Menu de navegacion</h2>
+          <nav class="contenedor">
             <a href="#">Inicio</a>
             <a href="#">Nosotros</a>
             <a href="#">Blog</a>
             <a href="#">Tienda</a>
             <a href="#">Contacto</a>
-        </nav>
-    </div>
-</body>
-
+          </nav>
+        </section>
+      </div>
+      <p class="copy">
+        BlogdeViajes - Todos los derechos reservados 2020 &copy;
+      </p>
+    </footer>
+  </body>
 </html>
