@@ -1,0 +1,190 @@
+:root {
+  --principal: "Staatliches", cursive;
+  --primario: #9c27b0;
+  --primarioOscuro: #89119d;
+  --secundario: #ffce00;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  background-color: var(--primario);
+  line-height: 2;
+  font-size: 2rem;
+}
+body.footer-fijo {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+body.footer-fijo main {
+  flex: 1;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  color: var(--secundario);
+  text-align: center;
+  font-size: 4rem;
+  font-family: var(--principal);
+}
+p {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.8rem;
+}
+.contenedor {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1000px;
+}
+.header {
+  display: grid;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+.barra {
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+}
+.barra .nav {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 200px);
+  column-gap: 2rem;
+}
+.barra a {
+  font-size: 3rem;
+  font-family: var(--principal);
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+}
+
+.barra a:hover {
+  color: var(--secundario);
+  cursor: pointer;
+}
+
+/* Productos */
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+}
+@media (min-width: 768px) {
+  .lista-productos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.producto {
+  background-color: var(--primarioOscuro);
+  padding: 1rem;
+}
+
+.contenido-producto p {
+  font-family: var(--principal);
+  color: white;
+  text-align: center;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.contenido-producto .titulo {
+  font-size: 4rem;
+}
+
+.contenido-producto .precio {
+  color: var(--secundario);
+  font-size: 2.8rem;
+}
+
+.grafico {
+  min-height: 300px;
+  grid-column: 1/3;
+  background-size: cover;
+  background-position: center center;
+}
+.grafico1 {
+  background-image: url(../img/grafico1.jpg);
+  grid-row: 2/3;
+}
+
+.grafico2 {
+  background-image: url(../img/grafico2.jpg);
+  grid-row: 8/9;
+}
+@media (min-width: 768px) {
+  .grafico2 {
+    grid-row: 5 /6;
+    grid-column: 2/4;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor-informacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+.contenedor-informacion img {
+  width: 100%;
+}
+.footer {
+  background-color: var(--primarioOscuro);
+  padding: 1rem 0;
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.copyright {
+  font-family: var(--principal);
+  font-size: 2.2rem;
+}
+
+.formulario {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 6rem);
+  gap: 2rem 2rem;
+}
+.campo {
+  background-color: transparent;
+  border: 5px solid #ffffff;
+  font-family: var(--principal);
+  font-size: 3rem;
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+}
+.talla {
+  /* -webkit-appearance: none; */
+  -webkit-border-radius: 0px;
+  grid-column: 1 /3;
+}
+.boton {
+  grid-row: 2/3;
+  grid-column: 1/4;
+  background-color: var(--secundario);
+  font-family: var(--principal);
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.boton:hover {
+  background-color: rgb(233, 187, 2);
+  cursor: pointer;
+}
