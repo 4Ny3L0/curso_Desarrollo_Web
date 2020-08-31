@@ -1,52 +1,250 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="apple-touch-icon" href="icon.png">
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
 
-    <meta name="theme-color" content="#fafafa">
-</head>
+    <meta name="theme-color" content="#fafafa" />
+  </head>
 
-<body>
+  <body>
     <header class="site-header">
-        <div class="hero">
-            <div class="contenido-header">
-                <nav class="redes-sociales">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-twitter"></i></a>
-                    <a href=""><i class="fab fa-pinterest"></i></a>
-                    <a href=""><i class="fab fa-youtube"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                </nav>
-                <div class="informacion-evento">
-                    <div class="clearfix">
-                        <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 Dic</p>
+      <div class="hero">
+        <div class="contenido-header">
+          <nav class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+          </nav>
+          <div class="informacion-evento">
+            <div class="clearfix">
+              <p class="fecha"><i class="fas fa-calendar-alt"></i>10-12 Dic</p>
 
-                        <p class="ciudad"> <i class="fas fa-map-marker-alt"></i>Guadalajara</p>
-
-                    </div>
-                    <h1 class="nombre-sitio">GdlWebCamp</h1>
-                    <p class="eslogan">La mejor conferencia de <span> diseño web</span></p>
-                </div>
-
+              <p class="ciudad">
+                <i class="fas fa-map-marker-alt"></i>Guadalajara
+              </p>
             </div>
+            <h1 class="nombre-sitio">GdlWebCamp</h1>
+            <p class="eslogan">
+              La mejor conferencia de <span> diseño web</span>
+            </p>
+          </div>
         </div>
+      </div>
     </header>
+
+    <div class="barra clearfix">
+      <div class="contenedor">
+        <div class="logo">
+          <img src="img/logo.svg" alt="" />
+        </div>
+
+        <div class="menu-movil">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav class="navegacion">
+          <a href="#">Conferencia</a>
+          <a href="#">Calendario</a>
+          <a href="#">Invitados</a>
+          <a href="#">Reservaciones</a>
+        </nav>
+      </div>
+    </div>
+
+    <main class="seccion contenedor">
+      <h2>La mejor conferencia de diseño web en español</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas ad
+        totam saepe earum laboriosam dicta dolores nisi tenetur quo, illo sequi
+        cum unde magnam fugiat explicabo cupiditate asperiores? Doloremque,
+        voluptatum.
+      </p>
+    </main>
+
+    <section class="programa">
+      <div class="contenedor-video">
+        <video autoplay loop poster="img/bg-talleres.jpg">
+          <source src="video/video.mp4" type="video/mp4" />
+          <source src="video/video.webm" type="video/webm" />
+          <source src="video/video.ogv" type="video/ovg" />
+        </video>
+      </div>
+      <!--Fin Contenedor video-->
+
+      <div class="contenido-programa">
+        <div class="contenedor">
+          <div class="programa-evento">
+            <h2>Programa del evento</h2>
+            <nav class="menu-programa">
+              <a href="#talleres"><i class="fa fa-code"></i>Talleres</a>
+              <a href="#conferencias"
+                ><i class="fa fa-comment"></i>Conferencias</a
+              >
+              <a href="#seminarios"
+                ><i class="fa fa-university"></i>Seminarios</a
+              >
+            </nav>
+
+            <div id="talleres" class="info-curso ocultar clearfix">
+              <div class="detalle-evento">
+                <h3>HTML5 CSS3 y Javascript</h3>
+                <p><i class="fa fa-clock"></i>16:00 hrs</p>
+                <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                <p><i class="fa fa-user"></i>Juan Pablo De la Torres Valdez</p>
+              </div>
+
+              <div class="detalle-evento">
+                <h3>Responsive Web Design</h3>
+                <p><i class="fa fa-clock"></i>20:00 hrs</p>
+                <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                <p><i class="fa fa-user"></i>Juan Pablo De la Torres Valdez</p>
+              </div>
+              <a href="#" class="boton float-right">Ver todos</a>
+            </div>
+            <div id="conferencias"></div>
+            <div id="seminarios"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="invitados contenedor seccion">
+      <h2>Nuestros invitados</h2>
+      <ul class="lista-invitados clearfix">
+        <li>
+          <div class="invitado">
+            <img src="img/invitados/invitado1.jpg" alt="" />
+            <p>Rafael Bautista</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitados/invitado2.jpg" alt="" />
+            <p>Shari Herrera</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitados/invitado3.jpg" alt="" />
+            <p>Gregorio Sanchez</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitados/invitado4.jpg" alt="" />
+            <p>Susana Rivera</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitados/invitado5.jpg" alt="" />
+            <p>Harold Garcia</p>
+          </div>
+        </li>
+
+        <li>
+          <div class="invitado">
+            <img src="img/invitados/invitado6.jpg" alt="" />
+            <p>Susan Sanchez</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <div class="contador parallax">
+      <div class="contenedor">
+        <ul class="resumen-evento clearfix">
+          <li>
+            <p class="numero">6</p>
+            Invitados
+          </li>
+
+          <li>
+            <p class="numero">15</p>
+            Talleres
+          </li>
+
+          <li>
+            <p class="numero">3</p>
+            Dias
+          </li>
+
+          <li>
+            <p class="numero">9</p>
+            Conferencias
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="precios seccion">
+      <h2>Precios</h2>
+      <div class="contenedor">
+        <ul class="lista-precios clearfix">
+          <li>
+            <div class="tabla-precio">
+              <h3>Pase por día</h3>
+              <p class="numero">$30</p>
+              <ul>
+                <li>Bocadillos Gratis</li>
+                <li>Todas las conferencias</li>
+                <li>Todos los talleres</li>
+              </ul>
+              <a href="#" class="boton hollow"> Comprar </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="tabla-precio">
+              <h3>Todos los dias</h3>
+              <p class="numero">$50</p>
+              <ul>
+                <li>Bocadillos Gratis</li>
+                <li>Todas las conferencias</li>
+                <li>Todos los talleres</li>
+              </ul>
+              <a href="#" class="boton"> Comprar </a>
+            </div>
+          </li>
+
+          <li>
+            <div class="tabla-precio">
+              <h3>Pase por 2 dias</h3>
+              <p class="numero">$45</p>
+              <ul>
+                <li>Bocadillos Gratis</li>
+                <li>Todas las conferencias</li>
+                <li>Todos los talleres</li>
+              </ul>
+              <a href="#" class="boton hollow"> Comprar </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- Add your site or application content here -->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
@@ -55,17 +253,16 @@
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-        window.ga = function() {
-            ga.q.push(arguments)
-        };
-        ga.q = [];
-        ga.l = +new Date;
-        ga('create', 'UA-XXXXX-Y', 'auto');
-        ga('set', 'anonymizeIp', true);
-        ga('set', 'transport', 'beacon');
-        ga('send', 'pageview')
+      window.ga = function () {
+        ga.q.push(arguments);
+      };
+      ga.q = [];
+      ga.l = +new Date();
+      ga("create", "UA-XXXXX-Y", "auto");
+      ga("set", "anonymizeIp", true);
+      ga("set", "transport", "beacon");
+      ga("send", "pageview");
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
-</body>
-
+  </body>
 </html>
