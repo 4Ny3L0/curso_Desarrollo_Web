@@ -129,6 +129,11 @@ ul {
 .boton:hover {
   background-color: #e33000;
 }
+.boton.hollow {
+  background-color: white;
+  color: #fe4918;
+  border: 2px solid #fe4918;
+}
 .float-right {
   float: right;
 }
@@ -539,6 +544,7 @@ p.ciudad {
   background-color: #fff;
   padding: 40px 0;
   text-align: center;
+  transition: all 0.3s ease-in-out;
 }
 .tabla-precio ul li {
   font-size: 14px;
@@ -546,7 +552,10 @@ p.ciudad {
   margin-bottom: 20px;
   columns: #868686;
 }
-
+.tabla-precio ul li i {
+  color: green;
+  margin-right: 10px;
+}
 .tabla-precio h3 {
   text-transform: uppercase;
   font-size: 25px;
@@ -554,6 +563,82 @@ p.ciudad {
 .tabla-precio .numero {
   color: #000000;
   font-size: 4em;
+  margin: 20px 0;
+}
+
+.tabla-precio:hover {
+  transform: scale(1.1);
+  border: 1px solid #fe4918;
+  box-shadow: 0px 0px 50px #666;
+}
+
+/* MAPA */
+
+.mapa {
+  height: 420px;
+  background: green;
+}
+
+/* TESTIMONIALES */
+.testimoniales {
+  padding-bottom: 20px;
+}
+.testimonial {
+  padding: 5px;
+}
+@media (min-width: 768px) {
+  .testimonial {
+    float: left;
+    width: 33.3%;
+  }
+}
+blockquote {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  position: relative;
+  margin: 0 0 10px 0;
+  padding-bottom: 20px;
+}
+blockquote p {
+  text-align: left !important;
+  font-size: 1em !important;
+  padding: 0 20px 0 65px;
+}
+blockquote p::before {
+  content: "\201c";
+  position: absolute;
+  left: 13px;
+  top: -2px;
+  font-size: 5rem;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  color: #fe4918;
+}
+.info-testimonial {
+  padding: 0;
+}
+
+.info-testimonial img {
+  width: 20%;
+  border-radius: 50%;
+  float: left;
+  margin-left: 20px;
+}
+.info-testimonial cite {
+  text-align: left;
+  color: #fe4918;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding-top: 20px;
+  width: 66.6%;
+  float: right;
+}
+.info-testimonial span {
+  color: #000000;
+  display: block;
+  text-transform: none;
+  margin-top: 10px;
 }
 /* ==========================================================================
    Helper classes
