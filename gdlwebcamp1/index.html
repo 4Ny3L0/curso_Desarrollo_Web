@@ -16,6 +16,7 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="css/main.css" />
 
     <meta name="theme-color" content="#fafafa" />
@@ -62,7 +63,7 @@
         </div>
 
         <nav class="navegacion">
-          <a href="#">Conferencia</a>
+          <a href="conferencia.html">Conferencia</a>
           <a href="#">Calendario</a>
           <a href="#">Invitados</a>
           <a href="#">Reservaciones</a>
@@ -120,8 +121,43 @@
               </div>
               <a href="#" class="boton float-right">Ver todos</a>
             </div>
-            <div id="conferencias"></div>
-            <div id="seminarios"></div>
+
+
+            <div id="conferencias" class="info-curso ocultar clearfix">
+              <div class="detalle-evento">
+                <h3>Como ser FreeLancer</h3>
+                <p><i class="fa fa-clock"></i>10:00 hrs</p>
+                <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                <p><i class="fa fa-user"></i>Juan Pablo De la Torres Valdez</p>
+              </div>
+
+              <div class="detalle-evento">
+                <h3>Tecnologias del futuro</h3>
+                <p><i class="fa fa-clock"></i>17:00 hrs</p>
+                <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                <p><i class="fa fa-user"></i>Juan Pablo De la Torres Valdez</p>
+              </div>
+              <a href="#" class="boton float-right">Ver todos</a>
+            </div>
+
+            <div id="seminarios" class="info-curso ocultar clearfix">
+              <div class="detalle-evento">
+                <h3>Diseño UI/UX para moviles</h3>
+                <p><i class="fa fa-clock"></i>16:00 hrs</p>
+                <p><i class="fa fa-calendar"></i>11 de Dic</p>
+                <p><i class="fa fa-user"></i>Juan Pablo De la Torres Valdez</p>
+              </div>
+
+              <div class="detalle-evento">
+                <h3>Aprender a programar en una mañana</h3>
+                <p><i class="fa fa-clock"></i>20:00 hrs</p>
+                <p><i class="fa fa-calendar"></i>10 de Dic</p>
+                <p><i class="fa fa-user"></i>Juan Pablo De la Torres Valdez</p>
+              </div>
+              <a href="#" class="boton float-right">Ver todos</a>
+            </div>
+            
+           
           </div>
         </div>
       </div>
@@ -178,22 +214,22 @@
       <div class="contenedor">
         <ul class="resumen-evento clearfix">
           <li>
-            <p class="numero">6</p>
+            <p class="numero"></p>
             Invitados
           </li>
 
           <li>
-            <p class="numero">15</p>
+            <p class="numero"></p>
             Talleres
           </li>
 
           <li>
-            <p class="numero">3</p>
+            <p class="numero"></p>
             Dias
           </li>
 
           <li>
-            <p class="numero">9</p>
+            <p class="numero"></p>
             Conferencias
           </li>
         </ul>
@@ -293,10 +329,81 @@
         <a href="" class="boton transparent">Registro</a>
       </div>
     </div>
+
+
+
+    <section class="seccion">
+      <h2>Faltan</h2>
+      <div class="cuenta-regresiva">
+        <ul class="clearfix">
+         <li>
+           <p id="dias" class="numero"></p>
+           Dias
+         </li>
+
+         <li>
+           <p class="numero" id="horas"></p>
+           Horas
+         </li>
+
+         <li>
+           <p class="numero" id="minutos"></p>
+           Minutos
+         </li>
+
+         <li>
+           <p class="numero" id="segundos"></p>
+           Segundos
+         </li>
+        </ul>
+      </div>
+    </section>
+
+
+<footer class="site-footer">
+  <div class="contenedor-footer clearfix contenedor">
+    <div class="footer-informacion">
+      <h3>Sobre <span>gdlwebcamp</span></h3>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum dolorem dignissimos perferendis aliquam quidem minus atque, laborum incidunt, quibusdam sed consequatur optio unde enim. Quibusdam iusto dolorem officia dolore. </p>
+    </div>
+
+    <div class="ultimos-tweets">
+      <h3>Últimos <span>Tweets</span></h3>
+      <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum dolorem dignissimos</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum dolorem dignissimos</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab nostrum dolorem dignissimos</li>
+      </ul>
+    </div>
+
+    <div class="menu">
+      <h3>Redes <span>sociales</span></h3>
+      <nav class="redes-sociales">
+            <a href=""><i class="fab fa-facebook-f"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+            <a href=""><i class="fab fa-instagram"></i></a>
+      </nav>
+    </div>
+  </div>
+
+  <p class="copyright">Todos los derechos reservados GDLWEBCAMP 2016 &copy;</p>
+</footer>
+
     <!-- Add your site or application content here -->
 
     <script src="js/vendor/modernizr-3.11.2.min.js"></script>
     <script src="js/plugins.js"></script>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-animateNumber/0.0.14/jquery.animateNumber.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.colorbox/1.6.4/jquery.colorbox-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->

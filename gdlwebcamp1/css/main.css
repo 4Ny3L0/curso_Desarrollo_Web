@@ -101,19 +101,23 @@ html {
 body {
   background-color: #f2f2f2;
 }
+
 img {
   max-width: 100%;
   margin: 0 auto;
 }
+
 h3 {
   font-size: 1.4em;
   color: #fe4918;
 }
+
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
+
 .boton {
   background-color: #fe4918;
   padding: 10px 40px;
@@ -126,49 +130,70 @@ ul {
   display: inline-block;
   transition: background-color 0.3s ease-in-out;
 }
+
 .boton:hover {
   background-color: #e33000;
 }
-.boton.hollow {
+
+.boton.hollow,
+.boton.hollow:hover {
   background-color: white;
   color: #fe4918;
   border: 2px solid #fe4918;
 }
+
+.boton.transparent {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.boton.transparent:hover {
+  border: 2px solid #fe4918;
+}
+
 .float-right {
   float: right;
 }
+
 .contenedor {
   margin: 0 auto;
   width: 98%;
 }
+
 @media (min-width: 480px) {
   .contenedor {
     width: 95%;
   }
 }
+
 @media (min-width: 768px) {
   .contenedor {
     width: 90%;
   }
 }
+
 @media (min-width: 990px) {
   .contenedor {
     width: 90%;
     max-width: 1100px;
   }
 }
+
 .numero {
   color: #fe4918;
   font-size: 4em;
   margin: 0;
 }
+
 .seccion {
   padding: 30px 0;
 }
+
 .seccion p {
   font-size: 1.6em;
   text-align: center;
 }
+
 h2 {
   font-size: 2.4em;
   font-family: arial, sans-serif;
@@ -184,6 +209,7 @@ h2::after {
   height: 30px;
   width: 100px;
 }
+
 /* HEADER */
 
 .hero {
@@ -256,6 +282,64 @@ p.ciudad {
   font-size: 5.9vw;
 }
 
+/* LETTERING */
+.nombre-sitio span {
+  position: relative;
+  text-shadow: 0 0 30px black;
+}
+
+@media (min-width: 992px) {
+  .char1 {
+    top: 20px;
+    right: 20px;
+  }
+
+  .char2 {
+    top: 0px;
+    left: -20px;
+  }
+
+  .char3 {
+    top: 10px;
+    right: 20px;
+  }
+
+  .char4 {
+    top: 5px;
+    right: 10px;
+  }
+
+  .char5 {
+    top: 15px;
+    right: 10px;
+  }
+
+  .char6 {
+    top: 5px;
+    left: 10px;
+  }
+
+  .char7 {
+    top: 20px;
+    left: -10px;
+  }
+
+  .char8 {
+    top: 0px;
+    left: 10px;
+  }
+
+  .char9 {
+    top: 10px;
+    right: 20px;
+  }
+
+  .char10 {
+    top: 20px;
+    right: 20px;
+  }
+}
+
 @media (min-width: 768px) {
   .nombre-sitio {
     font-size: 9.5vw;
@@ -282,6 +366,7 @@ p.ciudad {
   width: 80%;
   float: left;
 }
+
 .logo img {
   width: 100%;
 }
@@ -297,6 +382,7 @@ p.ciudad {
 .navegacion {
   /* display: none; */
 }
+
 .navegacion a {
   font-family: arial, sans-serif;
   text-decoration: none;
@@ -309,9 +395,11 @@ p.ciudad {
   text-align: center;
   margin-bottom: 10px;
 }
+
 .navegacion a:hover {
   background-color: #fe4918;
 }
+
 .navegacion a:last-of-type {
   border: 2px solid #fe4918;
   color: #fe4918;
@@ -320,6 +408,7 @@ p.ciudad {
 .navegacion a:last-of-type:hover {
   color: #fff;
 }
+
 @media only screen and (min-width: 768px) {
   .navegacion {
     width: 67%;
@@ -327,6 +416,7 @@ p.ciudad {
     display: block;
     text-align: right;
   }
+
   .navegacion a {
     margin: 0 10px 0 0;
     display: inline-block;
@@ -334,10 +424,12 @@ p.ciudad {
     display: inline-block;
     width: auto;
   }
+
   .navegacion a:last-of-type {
     margin-right: 0;
   }
 }
+
 /* Menu Movil */
 .menu-movil {
   width: 60px;
@@ -346,14 +438,17 @@ p.ciudad {
   text-align: right;
   margin-top: 8px;
 }
+
 .menu-movil:hover {
   cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
   .menu-movil {
     display: none;
   }
 }
+
 .menu-movil span {
   height: 8px;
   margin-bottom: 6px;
@@ -365,6 +460,7 @@ p.ciudad {
 .programa {
   position: relative;
 }
+
 .contenedor-video {
   max-width: 100%;
   overflow-x: hidden;
@@ -378,30 +474,36 @@ p.ciudad {
   height: 100%;
   width: 100%;
 }
+
 .programa-evento {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 15px;
   margin-top: 80px;
 }
+
 @media (min-width: 768px) {
   .programa-evento {
     width: 70%;
   }
 }
+
 @media (min-width: 992px) {
   .programa-evento {
     width: 50%;
   }
 }
+
 .menu-programa {
   width: 100%;
   border-bottom: 1px solid #f34918;
 }
+
 @media (min-width: 768px) {
   .menu-programa {
     display: table;
   }
 }
+
 .menu-programa a {
   display: block;
   text-align: center;
@@ -409,12 +511,29 @@ p.ciudad {
   text-decoration: none;
   margin-bottom: 10px;
   font-size: 1.2em;
+  position: relative;
 }
+
+.menu-programa a.activo::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 20px;
+  background-image: url("../img/talleres-flecha.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  bottom: -20px;
+}
+
 @media (min-width: 768px) {
   .menu-programa a {
     display: table-cell;
   }
 }
+
 .menu-programa a i,
 .detalle-evento p i {
   color: #f34918;
@@ -423,14 +542,20 @@ p.ciudad {
 }
 
 /* Detalle evento */
+.ocultar {
+  display: none;
+}
+
 .detalle-evento {
   margin-top: 20px;
   border-bottom: 1px solid black;
   padding: 0 20px;
 }
+
 .detalle-evento:last-of-type {
   border-bottom: none;
 }
+
 .detalle-evento p {
   margin-bottom: 20px;
   font-size: 20px;
@@ -441,6 +566,7 @@ p.ciudad {
   padding: 10px;
   float: left;
 }
+
 @media (min-width: 480px) {
   .lista-invitados li {
     width: 50%;
@@ -452,6 +578,7 @@ p.ciudad {
     width: 33.3%;
   }
 }
+
 .invitado {
   position: relative;
   overflow: hidden;
@@ -471,10 +598,12 @@ p.ciudad {
   font-size: 1em;
   transition: all 0.5s ease-in-out;
 }
+
 .invitado:hover p {
   bottom: -80px;
   opacity: 0;
 }
+
 .invitado img {
   filter: grayscale(1);
   -webkit-filter: grayscale(1);
@@ -486,6 +615,7 @@ p.ciudad {
   -webkit-filter: grayscale(0);
   transform: scale(1.1);
 }
+
 /* CONTADOR */
 .parallax::before {
   width: 100%;
@@ -499,6 +629,7 @@ p.ciudad {
   background-attachment: fixed;
   filter: brightness(0.8);
 }
+
 .contador {
   position: relative;
   height: auto;
@@ -513,6 +644,7 @@ p.ciudad {
   position: relative;
   padding: 120px 0;
 }
+
 .resumen-evento li {
   width: 50%;
   float: left;
@@ -521,6 +653,7 @@ p.ciudad {
   font-size: 24px;
   text-transform: uppercase;
 }
+
 @media (min-width: 768px) {
   .resumen-evento li {
     width: 25%;
@@ -539,6 +672,7 @@ p.ciudad {
     float: left;
   }
 }
+
 .tabla-precio {
   border: 1px solid #e1e1e1;
   background-color: #fff;
@@ -546,20 +680,24 @@ p.ciudad {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+
 .tabla-precio ul li {
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: 20px;
   columns: #868686;
 }
+
 .tabla-precio ul li i {
   color: green;
   margin-right: 10px;
 }
+
 .tabla-precio h3 {
   text-transform: uppercase;
-  font-size: 25px;
+  font-size: 18px;
 }
+
 .tabla-precio .numero {
   color: #000000;
   font-size: 4em;
@@ -583,15 +721,18 @@ p.ciudad {
 .testimoniales {
   padding-bottom: 20px;
 }
+
 .testimonial {
   padding: 5px;
 }
+
 @media (min-width: 768px) {
   .testimonial {
     float: left;
     width: 33.3%;
   }
 }
+
 blockquote {
   background-color: white;
   border: 1px solid #e1e1e1;
@@ -599,11 +740,13 @@ blockquote {
   margin: 0 0 10px 0;
   padding-bottom: 20px;
 }
+
 blockquote p {
   text-align: left !important;
   font-size: 1em !important;
   padding: 0 20px 0 65px;
 }
+
 blockquote p::before {
   content: "\201c";
   position: absolute;
@@ -615,6 +758,7 @@ blockquote p::before {
   line-height: 1;
   color: #fe4918;
 }
+
 .info-testimonial {
   padding: 0;
 }
@@ -625,6 +769,7 @@ blockquote p::before {
   float: left;
   margin-left: 20px;
 }
+
 .info-testimonial cite {
   text-align: left;
   color: #fe4918;
@@ -634,11 +779,259 @@ blockquote p::before {
   width: 66.6%;
   float: right;
 }
+
 .info-testimonial span {
   color: #000000;
   display: block;
   text-transform: none;
   margin-top: 10px;
+}
+
+/* NEWSLETTER */
+.newsletter {
+  position: relative;
+  height: auto;
+}
+
+.newsletter:before {
+  background-image: url(../img/bg-newsletter.jpg);
+  content: "";
+}
+
+.newsletter .contenido {
+  padding: 100px 0;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+}
+
+.newsletter .contenido p {
+  font-size: 1.2em;
+  text-transform: lowercase;
+}
+
+.newsletter .contenido h3 {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 7vw;
+}
+
+/* CUENTAREGRESIVA */
+
+.cuenta-regresiva ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cuenta-regresiva ul li {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2rem;
+  flex: 0 0 calc(100%);
+}
+
+@media (min-width: 768px) {
+  .cuenta-regresiva ul li {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    flex: 0 0 calc(25%);
+  }
+}
+
+.cuenta-regresiva .numero {
+  font-size: 4rem !important;
+  text-align: center;
+}
+
+/* footer */
+.site-footer {
+  background-color: #353535;
+}
+
+.contenedor-footer div {
+  color: white;
+  padding: 0 20px;
+  font-size: 12px;
+  text-align: justify;
+}
+
+@media (min-width: 768px) {
+  .contenedor-footer div {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+.site-footer h3 {
+  color: #fff;
+  font-size: 1.6em;
+  text-transform: uppercase;
+}
+
+.site-footer h3 span {
+  color: #fe4918;
+}
+
+.ultimos-tweets li {
+  padding: 0px 0 10px 0;
+}
+
+.menu nav {
+  text-align: left;
+}
+
+.copyright {
+  margin-bottom: 0;
+  text-align: center;
+  color: #fff;
+  padding: 15px;
+  background-color: #2e2e2e;
+}
+
+/* INTERNAS */
+
+/* Registros */
+.registro h3 {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px 0 0 0;
+}
+
+.registro label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fe4918;
+  padding-bottom: 10px;
+  font-size: 1.2em;
+}
+
+.caja {
+  background-color: white;
+  border: 1px solid #e1e1e1;
+  padding: 10px;
+  margin: 10px;
+}
+
+.campo {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .campo {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+.paquetes .tabla-precio:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.paquetes .tabla-precio input {
+  clear: both;
+  width: 100px;
+  margin: 10px auto 0 auto;
+  display: block;
+}
+
+.contenido-dia {
+  padding: 20px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .contenido-dia > div {
+    float: left;
+    width: 33.3%;
+  }
+}
+
+.contenido-dia > div p {
+  text-align: left;
+}
+
+.contenido-dia > div label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.contenido-dia > div input {
+  margin-right: 3px;
+}
+
+.contenido-dia > div label time {
+  color: #fe4918;
+  font-weight: bold;
+}
+
+/* Resumen */
+
+.resumen p {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.resumen .extras {
+  float: left;
+  width: 50%;
+  padding: 30px;
+}
+
+.orden {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.orden input {
+  margin: 10px 0 0 0;
+}
+
+.resumen .total {
+  float: right;
+  width: 50%;
+  padding: 30px;
+}
+
+.resumen input {
+  display: block;
+  margin: 10px auto;
+}
+
+#lista-productos {
+  background-color: #e1e1e1;
+  padding: 20px;
+  display: none;
+}
+
+#suma-total {
+  text-align: center;
+  font-size: 2em;
+  color: #fe4918;
+}
+
+#error {
+  clear: both;
+  padding: 20px;
+  text-align: center;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* INTERNAS */
+.galeria {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+.galeria a img {
+  margin-bottom: 15px;
 }
 /* ==========================================================================
    Helper classes
@@ -755,16 +1148,20 @@ blockquote p::before {
     box-shadow: none !important;
     text-shadow: none !important;
   }
+
   a,
   a:visited {
     text-decoration: underline;
   }
+
   a[href]::after {
     content: " (" attr(href) ")";
   }
+
   abbr[title]::after {
     content: " (" attr(title) ")";
   }
+
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
@@ -773,14 +1170,17 @@ blockquote p::before {
   a[href^="javascript:"]::after {
     content: "";
   }
+
   pre {
     white-space: pre-wrap !important;
   }
+
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
+
   /*
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
@@ -788,16 +1188,19 @@ blockquote p::before {
   thead {
     display: table-header-group;
   }
+
   tr,
   img {
     page-break-inside: avoid;
   }
+
   p,
   h2,
   h3 {
     orphans: 3;
     widows: 3;
   }
+
   h2,
   h3 {
     page-break-after: avoid;
